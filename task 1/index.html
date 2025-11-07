@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>moein-yazdani</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="/src/output.css">
+</head>
+
+<body>
+    <header class="flex max-md:hidden justify-around border-2 border-t-0 border-x-0 border-white p-4 relative">
+        <div
+            class=" max-md:hidden pl-2 py-2 border-l-0 border-r-2  text-black bg-white border-white absolute -left-5.5 top-0 bottom-0 rounded-full flex items-center pr-15">
+            <img class="w-9 rounded-full mr-2.5 ml-6 logo" src="/img/Programmer - Blank Poster.jfif" alt="">
+            @moein-yaz
+        </div>
+        <div class=" flex space-x-6 ml-110 max-md:">
+            <a href="">resume</a>
+            <a href="">about-me</a>
+            <a href="">home</a>
+        </div>
+        <div id="btn" onclick="btn()"
+            class="max-md:hidden text-white px-3 py-2 border-l-2 border-r-0 hover:bg-white hover:text-black hover:transition duration-400 ease-in-out cursor-pointer border-white absolute right-0 top-0 bottom-0 flex items-center pl-30">
+            <div class="relative right-18">what is my job?</div>
+        </div>
+    </header>
+    <img onclick="menue()" class="cursor-pointer min-md:hidden" width="40px" src="/img/icons8-menu-squared-50.png" alt="">
+    <div class="min-md:hidden divMenue none">
+            <div class="float-right mr-2 cursor-pointer hover:text-red-600 text-black " onclick="xx()">X</div>
+    </div>
+    <div class="bg-bl w-full h-[598px]">
+        <div class="relative">
+            <img id="img"
+                class=" max-md:hidden float-none w-full md:float-end md:h-120 md:w-auto md:mt-15 rounded-2xl md:mr-[131px] md:ml-96"
+                src="/img/download (2).jfif" alt="">
+        </div>
+        <div id="banner" class=" max-md:ml-35 banner ml-10 mt-4">
+            <h1 class="name max-md:text-sm">I,m MoEiN yazdani<br>programmer</h1>
+            Front-End Developer Crafting Responsive <br> and
+            User-Friendly Web Experiences
+        </div>
+
+        <button id="btnBlack"
+            class="bg-green-800 max-md:-ml-8  pl-3 pr-3 py-1.5 relative top-102 left-17 rounded-sm cursor-pointer">View My Work
+            <img class="icon absolute right-0 py-1" width="20px" src="/img/icons8-right-arrow-50.png" alt="">
+        </button>
+    </div>
+
+
+    <div class="grid grid-cols-4 gap-10 mt-20 mb-50 max-md:grid-cols-1 max-md:ml-15.5">
+        <div class="ml-15 mt-20 col-span-2 gap-4 max-md:hidden">
+            <h2 class="text-6xl font-bold">my <span class="text-green-800">service</soan>
+            </h2>
+            <p class="mt-10 text-base/7">I build fast, responsive websites using modern frameworks <br> like vue.js and
+                Tailwind CSS. From design to deployment, <br> I deliver clean, maintainable code that scales with your
+                business. <br> <br>
+                SEO-optimized, accessible, and cross-browser <br> compatible — your site works everywhere.
+            </p>
+            <button class="bg-green-800 mt-4 px-5 py-1.5 rounded-sm cursor-pointer" id="learn">Learn more... </button>
+        </div>
+        <div class="col-span-1">
+            <div class="bg-green-900 w-75 h-65 skill-card hover:rotate-3 max-md:-ml-6">
+                <img width="70px" class="ml-27.5 relative top-5" src="/img/icons8-js-100.png" alt="">
+                <h3 class="ml-27 mt-7 font-bold">javascript</h3>
+                <p class="ml-6 mr-4 mt-10">JavaScript is a versatile scripting language that adds interactivity and
+                    dynamic behavior to websites.</p>
+            </div>
+            <div class="bg-green-900 w-75 h-65 mt-8 skill-card hover:-rotate-3 max-md:-ml-6">
+                <img class="ml-26" src="/img/icons8-tailwind-css-100.png" alt="">
+                <h3 class="ml-27 font-bold">Tailwind css</h3>
+                <p class="ml-6 mr-4 mt-3">Tailwind CSS is the sleek, modern powerhouse that turns HTML into beautifully
+                    styled masterpieces with effortless class magic.</p>
+            </div>
+        </div>
+        <div class="col-span-1">
+            <div class="bg-green-900 w-75 h-65 mt-8 -ml-6 skill-card hover:rotate-4 max-md:-mt-2">
+                <img class="ml-26 relative top-4" width="75px" src="/img/icons8-php-100.png" alt="">
+                <h3 class="ml-31 mt-6 font-bold">PHP</h3>
+                <p class="ml-9 mr-4 mt-3">PHP is a popular server-side scripting language designed for web development
+                    and creating dynamic websites.</p>
+            </div>
+            <div class="bg-green-900 w-75 h-65 mt-8 -ml-6 skill-card hover:-rotate-3">
+                <img width="70px" class="ml-26 relative top-4.5" src="/img/icons8-laravel-96.png" alt="">
+                <h3 class="ml-28.5 mt-6 font-bold">laravel</h3>
+                <p class="ml-4 mr-4 mt-2">Laravel is a powerful and elegant PHP framework for building modern web
+                    applications with clean syntax, built-in tools for routing, authentication, and database management.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+
+
+    <script>
+        const logo = document.querySelector('.logo');
+        const textLogo = document.querySelector('.logoText');
+
+        let logos = gsap.to(logo, {
+            borderRadius: '4px',
+            width: '42px',
+            duration: 1.2,
+            paused: true
+        });
+
+        let text = gsap.to(textLogo, {
+            fontSize: '22px',
+            paused: true
+        });
+
+        logo.addEventListener('mouseenter', () => {
+            logos.play()
+            text.play()
+        });
+
+
+        gsap.to('.banner', {
+            y: -180
+        })
+        gsap.to('.banner', {
+            delay: 1.7,
+            y: -370,
+            duration: 2,
+            ease: "bounce.out"
+        });
+
+
+
+
+    </script>
+    <script src="js.js"></script>
+</body>
+
+</html>
