@@ -1,0 +1,134 @@
+body{
+  background-color: #000000;
+  color: white;
+}
+.bg-bl{
+background: #ffffff;
+background: linear-gradient(323deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 27%);
+}
+
+.oswald {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+a {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+
+a {
+  color: white;
+  position: relative;
+  text-decoration: none;
+  margin: 0 -100px 0 -100px;
+}
+
+
+a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 4px;
+  background-color: white;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+
+a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.x:hover {
+  color: red;
+}
+
+.backgroundBlack {
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.6;
+  background-color: rgba(0, 0, 0, 0.91);
+  color: white;
+  transition: opacity 0.5s ease-in-out;
+  height: 480px;
+  margin-right: 132px;
+  float: right;
+  border-radius: 15px;
+  width:80%;
+  position: absolute;
+  top: 110px;
+  left: 130px;
+}
+
+.banner {
+  font-weight: 500;
+  font-size: 20px;
+  position: absolute;
+  bottom: -160px;
+  left: 20%;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 500px;
+  color: white;
+}
+.name{
+  font-size: 45px;
+  line-height: 45px;
+  margin-bottom: 25px;
+}
+
+#btnBlack {
+  display: none;
+  transition: padding-right 0.2s ease-in-out;
+}
+
+.icon {
+  transition: all 0.3s ease;
+  display: none;
+  margin-left: 10px;
+  position: absolute;
+  right: 5px;
+  top: 6px;
+}
+
+.viewcon{
+  display: flex;
+  justify-content: center;
+}
+.work{
+
+  margin-bottom: 50vh;
+}
+.workcon{
+  display: flex;
+  justify-content: center;
+}
+
+.divMenue{
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 98vh;
+  width: 35%;
+  background-color: white;
+}
+.none{
+  display: none;
+}
+
+.block{
+  display: block;
+}
