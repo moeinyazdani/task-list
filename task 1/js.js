@@ -89,3 +89,69 @@ function menue(){
 function xx(){
     menuBar.classList.remove('block')
 }
+
+const aboutItems = [
+  {
+    icon: "/img/icons8-laptop-coding-64.png",
+    text: "I'm a passionate programmer who lives and breathes code every day."
+  },
+  {
+    icon: "/img/icons8-laptop-coding-64.png",
+    text: "Coding is my ultimate love—nothing excites me more than solving complex problems."
+  },
+  {
+    icon: "/img/icons8-book-64.png",
+    text: "Fluent in English, I enjoy reading tech docs and contributing to global open-source projects."
+  },
+  {
+    icon: "/img/icons8-movies-64.png",
+    text: "Anime enthusiast: I binge-watch series like One Piece and analyze their storytelling techniques."
+  },
+  {
+    icon: "/img/icons8-laptop-coding-64.png",
+    text: "Graphics design is my creative outlet—I love crafting pixel art and UI mockups."
+  },
+  {
+    icon: "/img/icons8-laptop-coding-64.png",
+    text: "From algorithms to full-stack apps, programming fuels my endless curiosity."
+  },
+  {
+    icon: "/img/icons8-laptop-coding-64.png",
+    text: "I dream in code and wake up eager to debug yesterday's challenges."
+  },
+  {
+    icon: "/img/icons8-laptop-coding-64.png",
+    text: "Obsessed with visual storytelling, I blend anime inspiration into my graphic projects."
+  },
+  {
+    icon: "/img/icons8-laptop-coding-64.png",
+    text: "English proficiency helps me collaborate with international devs on cutting-edge tech."
+  },
+  {
+    icon: "/img/icons8-laptop-coding-64.png",
+    text: "Programming + Anime + Graphics = My perfect world of innovation and art."
+  }
+];
+
+const container = document.getElementById('about-list');
+
+  aboutItems.forEach(item => {
+    const div = document.createElement('div');
+    div.className = 'grid grid-cols-6 bg-green-400 w-[70%] h-16 max-md:h-20 max-md:w-[90%] rounded-sm mt-1.5';
+    div.innerHTML = `
+      <img class="col-span-1 mt-2 ml-3 max-md:ml-1" width="40px" src="${item.icon}" alt="">
+      <div class="col-span-5 bg-white max-md:mt-1 max-md:mr-1 text-black mr-5 my-2 rounded-sm text-sm text-right">
+        <p class="mr-1">${item.text}</p>
+      </div>
+    `;
+    container.appendChild(div);
+  });
+
+  window.addEventListener('scroll', function(){
+    const sticky = this.document.querySelector('.stickyy');
+    if (this.window.scrollY > 0){
+      sticky.classList.add('navv');
+    } else{
+      sticky.classList.remove('navv');
+    }
+  });

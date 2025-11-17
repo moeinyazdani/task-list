@@ -7,16 +7,19 @@
     <title>moein-yazdani</title>
     <link rel="stylesheet" href="/src/style.css">
     <link rel="stylesheet" href="/src/output.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 </head>
 
 <body>
-    <header class="flex max-md:hidden justify-around border-2 border-t-0 border-x-0 border-white p-4 relative">
+    <header
+        class="stickyy z-10 flex max-md:hidden justify-around border-2 border-t-0 border-x-0 border-white p-4 relative">
         <div
-            class=" max-md:hidden pl-2 py-2 border-l-0 border-r-2  text-black bg-white border-white absolute -left-5.5 top-0 bottom-0 rounded-full flex items-center pr-15">
-            <img class="w-9 rounded-full mr-2.5 ml-6 logo" src="/img/Programmer - Blank Poster.jfif" alt="">
+            class=" max-md:hidden pl-2 py-2 border-l-0 border-r-2   border-white absolute -left-5.5 top-0 bottom-0 rounded-full flex items-center pr-15">
+            <img class="w-9 rounded-full mr-2.5 ml-6 logo border-white" src="/img/Programmer - Blank Poster.jfif"
+                alt="">
             @moein-yaz
         </div>
-        <div class=" flex space-x-6 ml-110 max-md:">
+        <div class=" flex space-x-6 ml-110 ">
             <a href="">resume</a>
             <a href="">about-me</a>
             <a href="">home</a>
@@ -30,12 +33,12 @@
         alt="">
     <div class="min-md:hidden divMenue none">
         <div class="float-right mr-2 cursor-pointer hover:text-red-600 text-black " onclick="xx()">X</div>
-        <div class="text-black mt-10">Home</div>
-        <div class="text-black mt-3">about me</div>
-        <div class="text-black mt-3">resume</div>
+        <div class="text-black mt-10 cursor-pointer">Home</div>
+        <div class="text-black mt-3 cursor-pointer">about me</div>
+        <div class="text-black mt-3 cursor-pointer">resume</div>
     </div>
     <div class="bg-bl w-full h-[598px]">
-        <div class="relative">
+        <div class="relative z-0">
             <img id="img"
                 class=" max-md:hidden float-none w-full md:float-end md:h-120 md:w-auto md:mt-15 rounded-2xl md:mr-[131px] md:ml-96"
                 src="/img/download (2).jfif" alt="">
@@ -54,7 +57,7 @@
     </div>
 
 
-    <div class="grid grid-cols-4 gap-10 mt-20 mb-50 max-md:grid-cols-1 max-md:ml-15.5">
+    <div class="grid grid-cols-4 gap-10 mt-20 mb-20 max-md:grid-cols-1 max-md:ml-15.5">
         <div class="ml-15 mt-20 col-span-2 gap-4 max-md:hidden">
             <h2 class="text-6xl font-bold">my <span class="text-green-800">service</soan>
             </h2>
@@ -95,22 +98,88 @@
             </div>
         </div>
     </div>
-    <div>
-        <div class="flex justify-center mb-15">
-            <div class="rounded-2xl bg-green-700 w-13 h-0.5 mt-4  mx-2"></div>
-            <div class="text-2xl">about me</div>
-            <div class="rounded-2xl bg-green-700 w-13 h-0.5 mt-4 mx-2"></div>
+    <div class="flex justify-center mb-15">
+        <div class="rounded-2xl bg-green-700 w-13 h-0.5 mt-4  mx-2"></div>
+        <div class="text-2xl">about me</div>
+        <div class="rounded-2xl bg-green-700 w-13 h-0.5 mt-4 mx-2"></div>
+    </div>
+    <div class="grid grid-cols-2 about mb-40 max-md:grid-cols-1">
+        <div class="col-span-1 flexx">
+            <div class="bg-green-800 h-93 w-[65%] ml-25 rounded-sm mt-1.5 max-md:ml-0">
+                <div class="max-md:mr-10 mt-6">
+                    <div class="bg-green-400 grid grid-cols-12 w-[80%] h-13 ml-12 mt-2 rounded-sm">
+                        <div class="col-span-2 mt-1 ml-3"><img width="40px" src="/img/icons8-css-50.png" alt=""></div>
+                        <div class="col-span-10 mt-1">
+                            <div>CSS</div>
+                            <div class="bg-white w-[95%] h-2 rounded-2xl mt-1">
+                                <div class="bg-green-700 h-2 w-[100%] rounded-2xl"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-green-400 grid grid-cols-12 w-[80%] h-13 ml-12 rounded-sm mt-4">
+                        <div class="col-span-2 mt-1 ml-3"><img width="40px" src="/img/icons8-tailwind-css-100.png"
+                                alt=""></div>
+                        <div class="col-span-10 mt-1">
+                            <div>Tailwind</div>
+                            <div class="bg-white w-[95%] h-2 rounded-2xl mt-1">
+                                <div class="bg-green-700 h-2 w-[80%] rounded-2xl"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-green-400 grid grid-cols-12 w-[80%] h-13 ml-12 rounded-sm mt-4">
+                        <div class="col-span-2 mt-1 ml-3"><img width="40px" src="/img/icons8-js-100.png" alt=""></div>
+                        <div class="col-span-10 mt-1">
+                            <div>js</div>
+                            <div class="bg-white w-[95%] h-2 rounded-2xl mt-1">
+                                <div class="bg-green-700 h-2 w-[75%] rounded-2xl"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-green-400 grid grid-cols-12 w-[80%] h-13 ml-12 rounded-sm mt-4">
+                        <div class="col-span-2 mt-1 ml-3"><img width="40px" src="/img/icons8-php-100.png" alt=""></div>
+                        <div class="col-span-10 mt-1">
+                            <div>PHP</div>
+                            <div class="bg-white w-[95%] h-2 rounded-2xl mt-1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-green-400 grid grid-cols-12 w-[80%] h-13 ml-12 rounded-sm mt-4">
+                        <div class="col-span-2 mt-2 ml-3"><img width="35px" src="/img/icons8-laravel-96.png" alt="">
+                        </div>
+                        <div class="col-span-10 mt-1">
+                            <div>laravel</div>
+                            <div class="bg-white w-[95%] h-2 rounded-2xl mt-1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="grid grid-cols-2">
-            <div class="col-span-1">
-                <p class="ml-25 w-94.5 text-justify">I'm a passionate front-end developer who fell in love with turning ideas into interactive realities.
-                    My journey began by tinkering with HTML and CSS, and has now evolved into building dynamic projects
-                    with JavaScript. I'm a continuous learner, currently focused on mastering modern frameworks like
-                    React, with the goal of becoming a full-stack developer. When I'm not coding, you can find me
-                    exploring the latest web trends or contributing to open-source projects</p>
+        <div id="about-container" class="col-span-1 overflow-y-scroll w-[100%] h-93 [-ms-overflow-style:none] [scrollbar-width:none]
+            [&::-webkit-scrollbar]:hidden ">
+            <div id="about-list" class="ml-20 max-md:mt-19 max-md:ml-13 max-md:mr-5">
+
             </div>
         </div>
     </div>
+    <div class="flex justify-center mb-15">
+        <div class="rounded-2xl bg-green-700 w-13 h-0.5 mt-4  mx-2"></div>
+        <div class="text-2xl">resume</div>
+        <div class="rounded-2xl bg-green-700 w-13 h-0.5 mt-4 mx-2"></div>
+    </div>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img class="rounded-b-lg" src="/img/Screenshot (3).png" alt="">
+        <h2 class="ml-2">to do list</h2>
+        <p class="text-sm w-[60%] ml-2 mt-2">An interactive To-Do List application with add, delete, and mark-as-done functionality Built with Vanilla JavaScript featuring local storage persistence for data management</p>
+        <button class="cursor-pointer bg-green-800 px-3 -py-1 rounded-sm ml-2 mt-2 text-sm">View</button>
+    </div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+    </div>
+  </div>
+
 
     <!-- < -- footer -- > -->
     <!-- <footer class="grid grid-cols-4 w-full bg-green-900 h-40">
@@ -137,6 +206,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
 
     <script>
@@ -171,8 +241,10 @@
             ease: "bounce.out"
         });
 
-
-
+        var swiper = new Swiper(".mySwiper", {
+      effect: "cards",
+      grabCursor: true,
+    });
 
     </script>
     <script src="js.js"></script>
