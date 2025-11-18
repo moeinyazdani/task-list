@@ -155,3 +155,25 @@ const container = document.getElementById('about-list');
       sticky.classList.remove('navv');
     }
   });
+
+
+  document.getElementById('aboutMe').addEventListener('click', function(event){
+    event.preventDefault();
+
+    const about = document.getElementById('about');
+
+    window.scrollTo({
+      top:about.offsetTop,
+      behavior: 'smooth',
+    })
+  });
+
+  document.getElementById('resumeA').addEventListener('click', function(event){
+    event.preventDefault()
+    const resume = document.getElementById('resume');
+
+    window.scrollTo({
+      top:resume.offsetTop,
+      behavior: 'smooth'
+    })
+  })
