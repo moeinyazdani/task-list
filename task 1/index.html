@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="/src/style.css">
     <link rel="stylesheet" href="/src/output.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Fjalla+One&family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -212,6 +215,24 @@
     </div>
 
 
+    <!-- call me -->
+     <div class="flex justify-center mb-15 mt-20">
+        <div class="rounded-2xl bg-green-700 w-13 h-0.5 mt-4  mx-2"></div>
+        <div class="text-2xl" id="resume">call me</div>
+        <div class="rounded-2xl bg-green-700 w-13 h-0.5 mt-4 mx-2"></div>
+    </div>
+     <div class="flex justify-center">
+        <div class="bg-white w-[60%] h-50 rounded-md">
+            <div class="cont-call">
+            <div class="text-black text-2xl font-black mt-4 ml-60   phone">Me phone: 09917439540</div>
+            <div class="text-black text-2xl font-black mt-4 ml-60 telegram">Telegram: @moein-yaz</div>
+            <div class="text-black text-2xl font-black mt-4 ml-60 emil">Emil: nameyaz@gmail.com</div>
+            </div>
+        </div>
+     </div>
+
+
+
     <!-- < -- footer -- > -->
    <footer class="grid grid-cols-4 w-full bg-green-900 h-40 mt-10">
         <div class="col-span-2 mt-2 ml-15">
@@ -271,6 +292,16 @@
             duration: 2,
             ease: "bounce.out"
         });
+        const tl = gsap.timeline({
+	scrollTrigger: {
+		trigger: '.cont-call',
+		start: 'top 20%'
+	}
+});
+tl.from(['.telegram','.phone','.emil'],{
+    x:-200,
+    duration:2
+});
 
         var swiper = new Swiper(".mySwiper", {
             effect: "cards",

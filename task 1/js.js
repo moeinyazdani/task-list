@@ -44,6 +44,7 @@ Even individuals like bloggers, artists, freelancers, and entrepreneurs need web
 
         // اصلاح: استفاده از متغیر صحیح
         backgroundDiv.classList.add('expanded');
+        document.body.classList.add('noScroll')
 
         isDivAdded = true;
 
@@ -52,6 +53,7 @@ Even individuals like bloggers, artists, freelancers, and entrepreneurs need web
         // جلوگیری از اضافه شدن listenerهای تکراری
         xButton.addEventListener('click', function removeDiv() {
             backgroundDiv.remove();
+            document.body.classList.remove('noScroll')
             img.style.display = 'block';
             isDivAdded = false;
             // حذف listener پس از اجرا
